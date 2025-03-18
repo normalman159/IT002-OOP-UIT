@@ -4,7 +4,7 @@ using namespace std;
 
 struct PhanSo{
     int ts, ms;
-    PhanSo() : ts(0), ms(0) {}
+    PhanSo() : ts(0), ms(1) {}
 };
 
 void input(PhanSo &A){

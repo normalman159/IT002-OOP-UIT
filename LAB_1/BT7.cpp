@@ -61,7 +61,7 @@ int main(){
 
     double min_toan = 10;
     for (int i =0; i < n; i++){
-        min_toan = fmax(min_toan, st[i].getToan());
+        min_toan = fmin(min_toan, st[i].getToan());
     } 
     cout << "Diem toan thap nhat la: " << min_toan << '\n';
 
