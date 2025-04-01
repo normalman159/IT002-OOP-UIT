@@ -1,4 +1,5 @@
 *.exe
 *tempCodeRunnerFile.cpp
-
+*.docx
 */Asset
+*.tmp
