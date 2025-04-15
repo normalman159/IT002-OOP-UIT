@@ -5,25 +5,27 @@
 // =========================================
 
 #pragma one
-#ifndef _cSoPhuc
-#define _cSoPhuc
+#ifndef _cArray
+#define _cArray
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-class cSoPhuc{
+class cArray{
 private:
-    double iThuc, iAo;
-
+    int n;
+    int* A;
 public:
-    cSoPhuc(double = 0, double = 0);
-
+    cArray();
+    cArray(int);
     void Nhap();
     void Xuat() const;
-    cSoPhuc Tong(const cSoPhuc&) const;
-    cSoPhuc Hieu(const cSoPhuc&) const;
-    cSoPhuc Tich(const cSoPhuc&) const;
-    cSoPhuc Thuong(const cSoPhuc&) const;
+    int TuanSuat(int) const;
+    bool isTangDan() const;
+    int SoNguyenTo() const;
+    void SapXepTangDan();
+
+    int& operator[](int);
 };
 
 #endif

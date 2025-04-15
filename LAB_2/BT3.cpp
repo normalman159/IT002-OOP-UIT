@@ -1,3 +1,9 @@
+// =========================================
+// Họ và tên sinh viên: Trần Phước Thanh Nhân
+// MSSV: 24521241
+// Lớp học: IT002.P212
+// =========================================
+
 #include "cSoPhuc.h"
 #include <bits/stdc++.h>
 
