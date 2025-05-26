@@ -4,8 +4,8 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#include "cDate.h"
 #include "XulyClassDate.cpp"
+#include "cDate.h"
 
 int main() {
     cDate A, B(15);
@@ -44,5 +44,3 @@ int main() {
 
     return 0;
 }
-
-

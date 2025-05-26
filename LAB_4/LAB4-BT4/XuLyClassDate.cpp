@@ -25,8 +25,8 @@ cDate::cDate(int days){
 
 cDate::cDate(int days, int months){
     tm *ltm = localtime(&now);
-    this->D = (days > 31 ? ltm->tm_mday : days);;
-    this->M = (months > 31 ? ltm->tm_mon + 1 : months);;
+    this->D = (days > 31 ? ltm->tm_mday : days);
+    this->M = (months > 31 ? ltm->tm_mon + 1 : months);
     this->Y = ltm->tm_year + 1900;
 }
 

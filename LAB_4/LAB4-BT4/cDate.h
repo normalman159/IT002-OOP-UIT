@@ -11,9 +11,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class cDate{
+class cDate {
 protected:
     int SoNgayTrongThang();
+
 public:
     int D, M, Y;
     cDate();
@@ -23,15 +24,14 @@ public:
 
     friend istream& operator>>(istream&, cDate&);
     friend ostream& operator<<(ostream&, const cDate&);
-    friend cDate operator+(const cDate&, int);
-    friend cDate operator+(int, const cDate&);
-    friend cDate operator-(const cDate&, int);
+    friend cDate    operator+(const cDate&, int);
+    friend cDate    operator+(int, const cDate&);
+    friend cDate    operator-(const cDate&, int);
 
-    cDate operator++(int); //D++
-    cDate operator++(); //++D
-    cDate operator--(int); //D--
-    cDate operator--(); //--D
+    cDate operator++(int);  // D++
+    cDate operator++();     //++D
+    cDate operator--(int);  // D--
+    cDate operator--();     //--D
 };
-
 
 #endif
