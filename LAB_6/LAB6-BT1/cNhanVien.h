@@ -5,25 +5,24 @@
 // =========================================
 
 #pragma once
-#ifndef _cGiaoDich
-#define _cGiaoDich
+#ifndef _cNhanVien
+#define _cNhanVien
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class cGiaoDich {
+class cNhanVien {
 protected:
-    string MaGiaoDich;
-    string NgayGiaoDich;
-    double SoLuong;
-    double DonGia;
+    string HoTen, NamSinh;
+    double Luong;
 
 public:
-    cGiaoDich();
+    cNhanVien();
     virtual void   Nhap();
     virtual void   Xuat() const;
-    virtual double ThanhTien() const = 0;
-    virtual char   LoaiGiaoDich() const = 0;
+    virtual double ThanhLuong() const = 0;
+    virtual char   LoaiNhanVien() const = 0;
+    virtual string getNamSinh() const = 0;
 };
 
 #endif

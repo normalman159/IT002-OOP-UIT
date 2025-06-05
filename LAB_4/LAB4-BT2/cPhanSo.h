@@ -4,16 +4,17 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cPhanSo
 #define _cPhanSo
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class cPhanSo{
+class cPhanSo {
 private:
-    int ts,ms;
+    int ts, ms;
+
 protected:
     bool isValid() const;
     void RutGon();
@@ -23,15 +24,15 @@ public:
 
     friend istream& operator>>(istream&, cPhanSo&);
     friend ostream& operator<<(ostream&, const cPhanSo&);
-    friend cPhanSo operator+(const cPhanSo&, const cPhanSo&);
-    friend cPhanSo operator-(const cPhanSo&, const cPhanSo&);
-    friend cPhanSo operator*(const cPhanSo&, const cPhanSo&);
-    friend cPhanSo operator/(const cPhanSo&, const cPhanSo&);
-    friend bool operator<(const cPhanSo&, const cPhanSo&);
-    friend bool operator>(const cPhanSo&, const cPhanSo&);
-    friend bool operator==(const cPhanSo&, const cPhanSo&);
-    friend bool operator>=(const cPhanSo&, const cPhanSo&);
-    friend bool operator<=(const cPhanSo&, const cPhanSo&);
+    friend cPhanSo  operator+(const cPhanSo&, const cPhanSo&);
+    friend cPhanSo  operator-(const cPhanSo&, const cPhanSo&);
+    friend cPhanSo  operator*(const cPhanSo&, const cPhanSo&);
+    friend cPhanSo  operator/(const cPhanSo&, const cPhanSo&);
+    friend bool     operator<(const cPhanSo&, const cPhanSo&);
+    friend bool     operator>(const cPhanSo&, const cPhanSo&);
+    friend bool     operator==(const cPhanSo&, const cPhanSo&);
+    friend bool     operator>=(const cPhanSo&, const cPhanSo&);
+    friend bool     operator<=(const cPhanSo&, const cPhanSo&);
 };
 
 #endif

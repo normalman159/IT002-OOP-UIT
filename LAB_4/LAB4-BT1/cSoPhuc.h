@@ -4,20 +4,20 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cSoPhuc
 #define _cSoPhuc
 
 #include <iostream>
 using namespace std;
 
-class cSoPhuc{
+class cSoPhuc {
 private:
-    double a,b;
+    double a, b;
 
 public:
     cSoPhuc(double = 0, double = 0);
-    
+
     friend cSoPhuc operator+(const cSoPhuc&, const cSoPhuc&);
     friend cSoPhuc operator-(const cSoPhuc&, const cSoPhuc&);
     friend cSoPhuc operator*(const cSoPhuc&, const cSoPhuc&);
@@ -28,8 +28,6 @@ public:
 
     friend ostream& operator<<(ostream&, const cSoPhuc&);
     friend istream& operator>>(istream&, cSoPhuc&);
-
 };
-
 
 #endif

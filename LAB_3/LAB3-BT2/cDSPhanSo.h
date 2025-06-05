@@ -4,19 +4,20 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cDSPhanSo
 #define _cDSPhanSo
 
 #include "cPhanSo.h"
 
-class cDSPhanSo: private cPhanSo{
+class cDSPhanSo : private cPhanSo {
 private:
-    int n;
+    int      n;
     cPhanSo* A;
+
 public:
     cDSPhanSo(int = 0);
-    void input();
+    void    input();
     cPhanSo Tong() const;
     cPhanSo PhanSoMAX() const;
     cPhanSo PhanSoMIN() const;

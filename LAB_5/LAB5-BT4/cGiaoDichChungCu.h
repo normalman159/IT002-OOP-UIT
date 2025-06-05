@@ -4,7 +4,7 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cGiaoDichChungCu
 #define _cGiaoDichChungCu
 
@@ -13,8 +13,8 @@
 class cGiaoDichChungCu : public cGiaoDich {
 private:
     static int DEM;
-    string MaCan;
-    double Tang;
+    string     MaCan;
+    double     Tang;
 
 public:
     cGiaoDichChungCu();

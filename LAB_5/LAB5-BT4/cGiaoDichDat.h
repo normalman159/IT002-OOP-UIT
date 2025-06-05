@@ -4,7 +4,7 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cGiaoDichDat
 #define _cGiaoDichDat
 
@@ -13,7 +13,7 @@
 class cGiaoDichDat : public cGiaoDich {
 private:
     static int DEM;
-    string LoaiDat;
+    string     LoaiDat;
 
 public:
     cGiaoDichDat();

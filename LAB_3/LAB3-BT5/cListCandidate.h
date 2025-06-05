@@ -4,15 +4,15 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cListCandidate
 #define _cListCandidate
 
 #include "cCandidate.h"
 
-class cListCandidate: private cCandidate{
+class cListCandidate : private cCandidate {
 private:
-    int n;
+    int         n;
     cCandidate *A;
 
 public:
@@ -21,7 +21,7 @@ public:
     ~cListCandidate();
     void Nhap();
     void Xuat() const;
-    
+
     void DSDiemLonHon15() const;
     void SapXepGiamDan();
 };

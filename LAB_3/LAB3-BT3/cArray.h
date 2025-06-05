@@ -4,25 +4,26 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cArray
 #define _cArray
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class cArray{
+class cArray {
 private:
-    int n;
+    int  n;
     int* A;
+
 public:
     cArray();
     cArray(int);
     void Nhap();
     void Xuat() const;
-    int TuanSuat(int) const;
+    int  TuanSuat(int) const;
     bool isTangDan() const;
-    int SoNguyenTo() const;
+    int  SoNguyenTo() const;
     void SapXepTangDan();
 
     int& operator[](int);

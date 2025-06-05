@@ -4,7 +4,7 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cGiaoDich
 #define _cGiaoDich
 

@@ -4,16 +4,17 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cListNhanVienVP
 #define _cListNhanVienVP
 
 #include "cNhanVienVP.h"
 
-class cListNhanVienVP: private cNhanVienVP{
+class cListNhanVienVP : private cNhanVienVP {
 private:
-    int n;
+    int          n;
     cNhanVienVP *A;
+
 public:
     cListNhanVienVP();
     cListNhanVienVP(int);
@@ -22,11 +23,11 @@ public:
     void Nhap();
     void Xuat() const;
 
-    int getSoLuong() const;
+    int         getSoLuong() const;
     cNhanVienVP TimLuongCaoNhat() const;
-    double TongLuong() const;
+    double      TongLuong() const;
     cNhanVienVP TimTuoiCaoNhat() const;
-    void SapXepTangTheoLuong();
+    void        SapXepTangTheoLuong();
 };
 
 #endif

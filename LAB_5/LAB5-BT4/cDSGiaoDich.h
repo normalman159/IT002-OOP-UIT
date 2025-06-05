@@ -4,7 +4,7 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cDSGiaoDich
 #define _cDSGiaoDich
 
@@ -20,11 +20,11 @@ private:
 
 public:
     cDSGiaoDich();
-    void Nhap();
-    void Xuat() const;
-    void getDEM() const;
-    double TBThanhTienChungCu() const;
-    const cGiaoDich* GDNhaPhoGTCaoNhat() const;
+    void             Nhap();
+    void             Xuat() const;
+    void             getDEM() const;
+    double           TBThanhTienChungCu() const;
+    const cGiaoDich *GDNhaPhoGTCaoNhat() const;
 };
 
 #endif

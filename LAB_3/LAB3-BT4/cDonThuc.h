@@ -4,32 +4,33 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cDonThuc
 #define _cDonThuc
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class cDonThuc{
+class cDonThuc {
 private:
     double heSo;
-    int soMu;
+    int    soMu;
+
 public:
     cDonThuc();
     cDonThuc(double, int);
-    void Nhap();
-    void Xuat() const;
+    void   Nhap();
+    void   Xuat() const;
     double TinhGiaTri(double) const;
 
     double getHeSo() const;
-    int getSoMu() const;
+    int    getSoMu() const;
 
     void setHeSo(double);
     void setSoMu(int);
 
-    friend cDonThuc operator+(const cDonThuc&, const cDonThuc&);
-    friend cDonThuc operator-(const cDonThuc&, const cDonThuc&);
+    friend cDonThuc operator+(const cDonThuc &, const cDonThuc &);
+    friend cDonThuc operator-(const cDonThuc &, const cDonThuc &);
 };
 
 #endif

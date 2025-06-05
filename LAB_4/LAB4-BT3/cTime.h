@@ -4,14 +4,14 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cTime
 #define _cTime
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class cTime{
+class cTime {
 private:
     int iGiay, iPhut, iGio;
 
@@ -25,10 +25,10 @@ public:
     friend cTime operator+(int, const cTime&);
     friend cTime operator-(const cTime&, int);
 
-    cTime operator++(int); //D++
-    cTime operator++(); //++D
-    cTime operator--(int); //D--
-    cTime operator--(); //--D
+    cTime operator++(int);  // D++
+    cTime operator++();     //++D
+    cTime operator--(int);  // D--
+    cTime operator--();     //--D
 };
 
 #endif

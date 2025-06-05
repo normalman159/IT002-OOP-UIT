@@ -4,29 +4,30 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cCandidate
 #define _cCandidate
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class cCandidate{
+class cCandidate {
 private:
-    int NamSinh;
+    int    NamSinh;
     string Ten, ID;
     double dToan, dVan, dAnh;
+
 public:
     cCandidate();
-    void Nhap();
-    void Xuat() const;
+    void   Nhap();
+    void   Xuat() const;
     double TongDiem() const;
 
-    friend bool operator<=(const cCandidate&, const cCandidate&);
-    friend bool operator<(const cCandidate&, const cCandidate&);
-    friend bool operator>=(const cCandidate&, const cCandidate&);
-    friend bool operator>(const cCandidate&, const cCandidate&);
-    friend bool operator==(const cCandidate&, const cCandidate&);
+    friend bool operator<=(const cCandidate &, const cCandidate &);
+    friend bool operator<(const cCandidate &, const cCandidate &);
+    friend bool operator>=(const cCandidate &, const cCandidate &);
+    friend bool operator>(const cCandidate &, const cCandidate &);
+    friend bool operator==(const cCandidate &, const cCandidate &);
 };
 
 #endif

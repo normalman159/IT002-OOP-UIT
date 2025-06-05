@@ -4,29 +4,30 @@
 // Lớp học: IT002.P212
 // =========================================
 
-#pragma one
+#pragma once
 #ifndef _cDiem
 #define _cDiem
 
 #include <bits/stdc++.h>
 using namespace std;
 
-class cDiem{
-private:    
+class cDiem {
+private:
     double X, Y;
+
 public:
     cDiem(double = 0, double = 0);
     ~cDiem();
-    void setX(double);
-    void setY(double);
+    void   setX(double);
+    void   setY(double);
     double getX() const;
     double getY() const;
-    void setXY(double, double);
-    void Nhap();
-    void Xuat() const;
-    double TinhKhoangCach(const cDiem&) const;
-    void TinhTien(double, double);
-    void Quay(double);
+    void   setXY(double, double);
+    void   Nhap();
+    void   Xuat() const;
+    double TinhKhoangCach(const cDiem &) const;
+    void   TinhTien(double, double);
+    void   Quay(double);
 };
 
 #endif
