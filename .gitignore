@@ -4,3 +4,6 @@
 */Asset
 *.tmp
 *.pdf
+*.raz
+*.zip
+*.rar
